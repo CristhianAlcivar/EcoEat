@@ -1,0 +1,302 @@
+{
+    "Aluminium foil": {
+        "material": "metal",
+        "recyclable": true,
+        "value": 0.05
+    },
+    "Battery": {
+        "material": "hazardous",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Aluminium blister pack": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Carded blister pack": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Other plastic bottle": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Clear plastic bottle": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Glass bottle": {
+        "material": "glass",
+        "recyclable": true,
+        "value": 0.1
+    },
+    "Plastic bottle cap": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Metal bottle cap": {
+        "material": "metal",
+        "recyclable": true,
+        "value": 0.05
+    },
+    "Broken glass": {
+        "material": "glass",
+        "recyclable": true,
+        "value": 0.1
+    },
+    "Food Can": {
+        "material": "metal",
+        "recyclable": true,
+        "value": 0.05
+    },
+    "Aerosol": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Drink can": {
+        "material": "metal",
+        "recyclable": true,
+        "value": 0.05
+    },
+    "Toilet tube": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Other carton": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Egg carton": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Drink carton": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Corrugated carton": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Meal carton": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Pizza box": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Paper cup": {
+        "material": "paper",
+        "recyclable": true,
+        "value": 0.02
+    },
+    "Disposable plastic cup": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Foam cup": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Glass cup": {
+        "material": "glass",
+        "recyclable": true,
+        "value": 0.1
+    },
+    "Other plastic cup": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Food waste": {
+        "material": "organic",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Glass jar": {
+        "material": "glass",
+        "recyclable": true,
+        "value": 0.1
+    },
+    "Plastic lid": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Metal lid": {
+        "material": "metal",
+        "recyclable": true,
+        "value": 0.05
+    },
+    "Other plastic": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Magazine paper": {
+        "material": "paper",
+        "recyclable": true,
+        "value": 0.02
+    },
+    "Tissues": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Wrapping paper": {
+        "material": "paper",
+        "recyclable": true,
+        "value": 0.02
+    },
+    "Normal paper": {
+        "material": "paper",
+        "recyclable": true,
+        "value": 0.02
+    },
+    "Paper bag": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Plastified paper bag": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Plastic film": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Six pack rings": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Garbage bag": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Other plastic wrapper": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Single-use carrier bag": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Polypropylene bag": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Crisp packet": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Spread tub": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Tupperware": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Disposable food container": {
+        "material": "organic",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Foam food container": {
+        "material": "organic",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Other plastic container": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Plastic glooves": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Plastic utensils": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Pop tab": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Rope & strings": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Scrap metal": {
+        "material": "metal",
+        "recyclable": true,
+        "value": 0.05
+    },
+    "Shoe": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Squeezable tube": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Plastic straw": {
+        "material": "plastic",
+        "recyclable": true,
+        "value": 0.01
+    },
+    "Paper straw": {
+        "material": "paper",
+        "recyclable": true,
+        "value": 0.02
+    },
+    "Styrofoam piece": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Unlabeled litter": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    },
+    "Cigarette": {
+        "material": "other",
+        "recyclable": false,
+        "value": 0.0
+    }
+}

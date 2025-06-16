@@ -1,0 +1,15 @@
+
+.env
+# Ignorar entorno virtual
+/venv/
+
+# Ignorar contenido de /models, pero sí subir la carpeta vacía
+/models/*
+!/models/.gitkeep
+
+# Ignorar contenido de las carpetas de datos, pero sí subir las carpetas vacías
+/app/data/images/*
+!/app/data/images/.gitkeep
+
+/app/data/processed/*
+!/app/data/processed/.gitkeep.env
