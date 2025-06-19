@@ -68,5 +68,16 @@ Prediccion:
 - Valor estimado: $0.10
 - Confianza: 85.67%
 
-## Ejecutar proyecto
+
+## Crea y activa un entorno virtual
+python -m venv venv
+venv\Scripts\activate
+
+## Instala las dependencias
+pip install -r requirements.txt
+
+##  Ejecución del servidor
+alembic upgrade head
+
+## Ejecución del servidor
 uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
