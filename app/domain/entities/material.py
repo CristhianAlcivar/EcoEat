@@ -1,8 +1,10 @@
+from uuid import uuid4
+
 class Material:
-    def __init__(self, id: str, nombre_material: str, tipo_material: str,
+    def __init__(self, nombre_material: str, tipo_material: str,
                  renovable: bool, reciclable: bool, impacto_ambiental: str,
-                 imagen_url: str):
-        self.id = id
+                 imagen_url: str, id: str = None):
+        self.id = id or uuid4()
         self.nombre_material = nombre_material
         self.tipo_material = tipo_material
         self.renovable = renovable

@@ -1,5 +1,5 @@
 from typing import List
-from app.domain.entities.model_performance import ModelPerformance
+from app.domain.entities.models import ModelPerformance
 from app.domain.repositories.model_repository import ModelRepository
 
 class ListarModelosEntrenadosUseCase:

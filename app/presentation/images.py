@@ -1,18 +1,10 @@
-from fastapi import APIRouter
-from app.application.use_cases.guardar_imagen_clasificada import GuardarImagenClasificadaUseCase
+from fastapi import APIRouter, Query
+
 from app.data.repositories.image_repository_impl import SQLAlchemyImageRepository
+from app.data.db.database import SessionLocal
+from fastapi import UploadFile, File
 
 router = APIRouter(prefix="/imagenes", tags=["imagenes"])
-
-from fastapi import UploadFile, File
-import shutil
-import uuid
-import os
-
-from app.application.use_cases.guardar_imagen_clasificada import GuardarImagenClasificadaUseCase
-from app.application.use_cases.clasificar_materiales import ClasificarMaterialesUseCase
-from app.data.ml.material_detector import MaterialDetector
-from app.data.repositories.image_repository_impl import SQLAlchemyImageRepository
 
 @router.post("/clasificar")
 def clasificar_imagen(file: UploadFile = File(...), usuario_id: str = ""):
@@ -59,3 +51,14 @@ def clasificar_imagen(file: UploadFile = File(...), usuario_id: str = ""):
         "no_renovables": no_renovables,
         "confianza_promedio": confianza
     }
+
+
+@router.get("/")
+def listar_todas_con_usuario(telefono: str = Query(None)):
+    with SessionLocal() as session:
+        repo = SQLAlchemyImageRepository(session)
+        if telefono:
+            if telefono.startswith("0") and len(telefono) == 10:
+                telefono = "593" + telefono[1:]
+            return repo.get_all_with_user(telefono)
+        return repo.get_all_with_user()

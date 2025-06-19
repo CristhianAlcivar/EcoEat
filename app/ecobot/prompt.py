@@ -36,38 +36,26 @@ Final Answer: {
 🔹 Valor estimado: $0.10  
 🔹 Confianza: 92.46%
 
-IMPORTANTE: Devolver el mensaje de una mejor manera tomando en cuenta la información de la predicción enviada, humanizado para cualquier persona, enviar el valor estimado tambien.
-────────────────────────────────────────
-## Ejemplos de respuesta
+IMPORTANTE RESPONDER IGUAL A ESTE EJEMPLO: Usando únicamente la siguiente información, genera un mensaje natural, fácil de entender, que describa el residuo detectado, si es reciclable, su valor estimado (aclarando que es una estimación), y ofrece un consejo sobre cómo manejar ese tipo de residuo.
+🔹 Categoría: {categoria}
+🔹 Material: {material}
+🔹 Reciclable: {reciclable}
+🔹 Valor estimado: {valor}
+🔹 Confianza: {confianza}%
+No inventes otra categoría o tipo de residuo. Usa solo la información dada.
 
-**Usuario:** ¿El cartón es renovable?
-→  
+Ejemplo de respuesta:
 {% raw %}
 Final Answer: {
-  "msg": "El cartón es renovable porque proviene de la madera. Recíclalo limpio para cuidar el planeta. ♻️",
-  "accion": "etiquetado_material",
+  "msg": "Tu explicación y consejo aquí, máximo 2-3 líneas.",
+  "accion": "imagen_etiquetada",
   "data": {
-    "material": "cartón",
-    "tipo": "renovable",
-    "consejo": "Recicla el cartón limpio y seco."
+    "material": "nombre del material",
+    "tipo": "renovable | no_renovable",
+    "consejo": "recomendación ecológica concreta"
   }
 }
 {% endraw %}
-
-**Usuario:** ¿Y el plástico del yogur?
-→  
-{% raw %}
-Final Answer: {
-  "msg": "El plástico es no renovable y tarda siglos en degradarse. Prefiere envases reciclables o reutilizables.",
-  "accion": "etiquetado_material",
-  "data": {
-    "material": "plástico",
-    "tipo": "no_renovable",
-    "consejo": "Evita plásticos de un solo uso y recicla siempre que puedas."
-  }
-}
-{% endraw %}
-
 ────────────────────────────────────────
 ## Si el material no está en la lista
 

@@ -60,15 +60,16 @@ def predict_image(image_path):
     info = class_info[material]
 
     # Devuelve el resultado como string (ideal para WhatsApp)
-    result = (
-        f"Predicción de material:\n"
-        f"🔹 Categoría: {info['class_name']}\n"
-        f"🔹 Material: {info['material']}\n"
-        f"🔹 Reciclable: {'Sí' if info['recyclable'] else 'No'}\n"
-        f"🔹 Valor estimado: ${info['value']:.2f}\n"
-        f"🔹 Confianza: {confidence*100:.2f}%"
-    )
-    return result
+    return {
+        "resultado_modelo": info["class_name"],
+        "class_name": info["class_name"],
+        "material": info["material"],
+        "recyclable": info["recyclable"],
+        "value": info["value"],
+        "materiales_renovables": [info["material"]] if info["recyclable"] else [],
+        "materiales_no_renovables": [info["material"]] if not info["recyclable"] else [],
+        "confianza_promedio": float(confidence)
+    }
 
 # ========== USO DESDE TERMINAL ==========
 if __name__ == "__main__":
